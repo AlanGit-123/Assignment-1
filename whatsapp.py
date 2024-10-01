@@ -1,0 +1,52 @@
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("green")
+turtle.speed(8)
+
+# Outer white circle
+turtle.penup()
+turtle.goto(0, 0)
+turtle.pendown()
+turtle.color("white")
+turtle.begin_fill()
+turtle.circle(150)
+turtle.end_fill()
+
+# Green circle
+turtle.penup()
+turtle.goto(0, 10)
+turtle.pendown()
+turtle.color("green")
+turtle.begin_fill()
+turtle.circle(140)
+turtle.end_fill()
+
+# Telephone shape
+turtle.goto(-30, 60)
+turtle.pendown()
+turtle.color("white")
+turtle.begin_fill()
+turtle.right(60)
+turtle.circle(140, -90)
+turtle.right(30)
+turtle.circle(50, -50)
+turtle.left(90)
+turtle.forward(40)
+turtle.right(90)
+turtle.forward(20)
+turtle.penup()
+turtle.goto(-30, 60)
+turtle.pendown()
+turtle.right(150)
+turtle.circle(50, 50)
+turtle.left(80)
+turtle.forward(40)
+turtle.left(90)
+turtle.forward(20)
+turtle.left(98.5)
+turtle.circle(95, -90)
+turtle.end_fill()
+turtle.penup()
+turtle.done()
+
